@@ -46,9 +46,13 @@ $ terragrunt run-all apply -auto-approve >/dev/null 2>&1
 $ terragrunt --terragrunt-parallelism 1 run-all output 2>/dev/null
 ====== staging/ecs/cluster
 tg_cfg = {
-  "aws_account_id" = "234567890123"
-  "aws_account_name" = "stg-account"
-  "aws_region" = "eu-west-1"
+  "aws" = {
+    "account" = {
+      "id" = "234567890123"
+      "name" = "stg-account"
+    }
+    "region" = "eu-west-1"
+  }
   "complex_cfg_setting" = {
     "key1" = "key1valueDefault"
     "key2" = "key2valueDefault"
@@ -70,9 +74,13 @@ tg_cfg = {
 }
 ====== production/ecs/cluster
 tg_cfg = {
-  "aws_account_id" = "123456789012"
-  "aws_account_name" = "prod-account"
-  "aws_region" = "eu-west-1"
+  "aws" = {
+    "account" = {
+      "id" = "123456789012"
+      "name" = "prod-account"
+    }
+    "region" = "eu-west-1"
+  }
   "complex_cfg_setting" = {
     "key1" = "key1valueDefault"
     "key2" = "key2valueDefault"
@@ -95,9 +103,13 @@ tg_cfg = {
 }
 ====== staging/ecs/tasks
 tg_cfg = {
-  "aws_account_id" = "234567890123"
-  "aws_account_name" = "stg-account"
-  "aws_region" = "eu-west-1"
+  "aws" = {
+    "account" = {
+      "id" = "234567890123"
+      "name" = "stg-account"
+    }
+    "region" = "eu-west-1"
+  }
   "complex_cfg_setting" = {
     "key1" = "key1valueDefault"
     "key2" = "key2valueDefault"
@@ -119,9 +131,13 @@ tg_cfg = {
 }
 ====== staging/network
 tg_cfg = {
-  "aws_account_id" = "234567890123"
-  "aws_account_name" = "stg-account"
-  "aws_region" = "eu-west-1"
+  "aws" = {
+    "account" = {
+      "id" = "234567890123"
+      "name" = "stg-account"
+    }
+    "region" = "eu-west-1"
+  }
   "complex_cfg_setting" = {
     "key1" = "key1valueDefault"
     "key2" = "key2valueDefault"
@@ -143,9 +159,13 @@ tg_cfg = {
 }
 ====== production/ecr
 tg_cfg = {
-  "aws_account_id" = "123456789012"
-  "aws_account_name" = "prod-account"
-  "aws_region" = "eu-west-1"
+  "aws" = {
+    "account" = {
+      "id" = "123456789012"
+      "name" = "prod-account"
+    }
+    "region" = "eu-west-1"
+  }
   "complex_cfg_setting" = {
     "key1" = "key1valueDefault"
     "key2" = "no"
@@ -168,9 +188,13 @@ tg_cfg = {
 }
 ====== production/network
 tg_cfg = {
-  "aws_account_id" = "123456789012"
-  "aws_account_name" = "prod-account"
-  "aws_region" = "eu-west-1"
+  "aws" = {
+    "account" = {
+      "id" = "123456789012"
+      "name" = "prod-account"
+    }
+    "region" = "eu-west-1"
+  }
   "complex_cfg_setting" = {
     "key1" = "key1valueDefault"
     "key2" = "key2valueDefault"
@@ -193,9 +217,13 @@ tg_cfg = {
 }
 ====== production/ecs/tasks
 tg_cfg = {
-  "aws_account_id" = "123456789012"
-  "aws_account_name" = "prod-account"
-  "aws_region" = "eu-west-1"
+  "aws" = {
+    "account" = {
+      "id" = "123456789012"
+      "name" = "prod-account"
+    }
+    "region" = "eu-west-1"
+  }
   "complex_cfg_setting" = {
     "key1" = "key1valueDefault"
     "key2" = "key2valueDefault"
@@ -218,9 +246,13 @@ tg_cfg = {
 }
 ====== staging/ecr
 tg_cfg = {
-  "aws_account_id" = "234567890123"
-  "aws_account_name" = "stg-account"
-  "aws_region" = "eu-west-1"
+  "aws" = {
+    "account" = {
+      "id" = "234567890123"
+      "name" = "stg-account"
+    }
+    "region" = "eu-west-1"
+  }
   "complex_cfg_setting" = {
     "key1" = "key1valueDefault"
     "key2" = "key2valueDefault"

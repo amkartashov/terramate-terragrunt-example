@@ -1,9 +1,12 @@
 terramate {
+  config {
+    disable_safeguards = ["git"]
+  }
 }
 
 globals {
   cfg = {
-    stack_name = terramate.stack.name
+    stack_name        = terramate.stack.name
     stack_description = terramate.stack.description
   }
 }

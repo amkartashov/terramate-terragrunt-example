@@ -1,5 +1,10 @@
 globals "cfg" {
   environment = "staging"
-  aws_account_name = "stg-account"
-  aws_account_id = "234567890123"
+}
+
+globals "cfg" "aws" {
+  account = {
+    name = "stg-account"
+    id   = "234567890123"
+  }
 }

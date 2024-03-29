@@ -2,9 +2,13 @@
 
 locals {
   cfg = {
-    aws_account_id   = "234567890123"
-    aws_account_name = "stg-account"
-    aws_region       = "eu-west-1"
+    aws = {
+      account = {
+        id   = "234567890123"
+        name = "stg-account"
+      }
+      region = "eu-west-1"
+    }
     complex_cfg_setting = {
       key1 = "key1valueDefault"
       key2 = "key2valueDefault"
